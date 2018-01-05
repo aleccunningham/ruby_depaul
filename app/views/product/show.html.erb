@@ -1,0 +1,13 @@
+<h1><%= @product.title %></h1>
+
+<p>
+   <strong>Price: </strong> $<%= @product.price %><br />
+   <strong>Subject :</strong> <%= @product.subject.name %><br />
+   <strong>Created Date:</strong> <%= @product.created_at %><br />
+</p>
+
+<p><%= @product.description %></p>
+
+<hr />
+
+<%= link_to 'Back', {:action => 'list'} %>
